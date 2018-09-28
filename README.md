@@ -37,9 +37,10 @@ Competition: https://www.datafountain.cn/competitions/313/details/rule.
 
     具体不懂有没有大用的搜下研究下, 比如:点击次数, 加购次数, 有什么用?
 
-    其他基本的看比赛网站的数据说明, 一些特殊的不直观的需要注释一下:
+    其他基本的看比赛网站的数据说明, 一些特殊的需要注释一下:
 
-    -   sku: 是什么?
+    -   sku_id: 单品 
+    -   goods_id: 商品, 一个可以对应多个sku (款式)
 
 -   [ ] 数据集大小
 
@@ -66,7 +67,7 @@ Competition: https://www.datafountain.cn/competitions/313/details/rule.
 -   [ ] LSTM
 -   [ ] 普通全连接
 
-###RF
+### RF
 
 ### SVR
 
@@ -78,7 +79,7 @@ Competition: https://www.datafountain.cn/competitions/313/details/rule.
 
 -   [ ] XGboost 等等 (是什么?)
 
-## MISC
+## Misc
 
 -   [ ] EDA 是什么????????? 好多用了 EDA, eg https://www.kaggle.com/harshpan/store-item-eda-lightgbm
 

@@ -47,7 +47,7 @@ class LoggerCTX:
                 handler.setFormatter(get_formatter())
 
 
-# Most code is stolen from http://goo.gl/qTpR3
+# Most code is copied from http://goo.gl/qTpR3
 
 
 class ColorizingStreamHandler(logging.StreamHandler):

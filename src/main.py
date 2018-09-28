@@ -1,6 +1,9 @@
 import os
 import logging
+
 import click
+from tqdm import tqdm
+from config import datasets_dir, models_dir, logs_dir
 
 from utils.logger import init_logger
 
@@ -8,8 +11,7 @@ logger = logging.getLogger(__name__)
 
 
 def main():
-    output_dir = "../logs/"
-    init_logger(log_file=os.path.join(output_dir, 'work.log'))
+    init_logger(log_file=os.path.join(logs_dir, 'work.log'))
 
     logger.info("info 还行")
 

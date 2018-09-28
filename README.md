@@ -40,7 +40,7 @@ Competition: https://www.datafountain.cn/competitions/313/details/rule.
     其他基本的看比赛网站的数据说明, 一些特殊的需要注释一下:
 
     -   sku_id: 单品 
-    -   goods_id: 商品, 一个可以对应多个sku (款式)
+    -   goods_id: 商品, 一个可以有多个sku (款式)
 
 -   [ ] 数据集大小
 
@@ -77,7 +77,8 @@ Competition: https://www.datafountain.cn/competitions/313/details/rule.
 
 融合
 
--   [ ] XGboost 等等 (是什么?)
+-   [ ] XGboost (是什么?)
+-   [ ] LightGBM (what?)
 
 ## Misc
 

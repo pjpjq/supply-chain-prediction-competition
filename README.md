@@ -55,14 +55,16 @@ Competition: https://www.datafountain.cn/competitions/313/details/rule.
 
 ## Feature Engineering
 
--   New Features:
+- New Features:
     -   
 
 ## Model Training
 
-找各种模型, 调参
+找各种模型 + 调参
 
 ### NN
+
+GPU 上 train, 用 fast.ai 技巧如 https://blog.floydhub.com/ten-techniques-from-fast-ai/
 
 -   [ ] LSTM
 -   [ ] 普通全连接 MLP

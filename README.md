@@ -12,10 +12,10 @@ Competition: https://www.datafountain.cn/competitions/313/details/rule.
 
 ## Resources
 
--   Kaggle 学习
+-   Kaggle 学习资料
     -    https://github.com/apachecn/kaggle
 -   需求预测: https://en.wikipedia.org/wiki/Demand_forecasting.
--   Time series 分析 (里面链接有点太多了找些看): https://www.kaggle.com/c/demand-forecasting-kernels-only/discussion/63568
+-   Time series 分析 (里面链接有点太多了挑些看): https://www.kaggle.com/c/demand-forecasting-kernels-only/discussion/63568
 -   类似的比赛 (搜 online + sales/demand + prediction/forcasting + competition/challenge):
     -   https://www.kaggle.com/c/demand-forecasting-kernels-only
     -   https://semantive.com/long-term-demand-forecasting/ 博客
@@ -65,7 +65,7 @@ Competition: https://www.datafountain.cn/competitions/313/details/rule.
 ### NN
 
 -   [ ] LSTM
--   [ ] 普通全连接
+-   [ ] 普通全连接 MLP
 
 ### RF
 
@@ -73,12 +73,12 @@ Competition: https://www.datafountain.cn/competitions/313/details/rule.
 
 
 
-## Emsemble
+## Ensemble
 
 融合
 
--   [ ] XGboost (是什么?)
--   [ ] LightGBM (what?)
+-   [ ] XGBoost (是什么?)
+-   [ ] lightGBM (what?)
 
 ## Misc
 

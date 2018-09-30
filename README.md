@@ -23,10 +23,12 @@ Competition: https://www.datafountain.cn/competitions/313/details/rule.
 ## Additional Info (optional)
 
 -   可能有用的外部信息
-    -   [ ] 特殊节日: 类似双十一的促销节或者滞销时期
+    -   [ ] 特殊节日: 类似双十一的促销节或者滞销时期, 好像促销很关键, 所以 
+    -   [ ] 查下5月的促销节
     -   [ ] 气候
-    -   [ ] 宗教
-    -   [ ] 执御在沙特主要销售什么产品? 什么特点? 
+    -   [ ] 宗教, 比如有什么节是不能买东西的
+    -   [ ] 跟中国的政治关系变化 (对外贸易的政策变化)
+    -   [ ] 执御在沙特主要销售什么产品? 什么特点? 跟沙特人民的喜好关系?
         -   和网红合作 (有什么用?)
 -   
 
@@ -35,12 +37,13 @@ Competition: https://www.datafountain.cn/competitions/313/details/rule.
 
 -   [ ] 数据集各列的意义
 
-    具体不懂有没有大用的搜下研究下, 比如:点击次数, 加购次数, 有什么用?
+    具体不懂有没有用的搜下研究下
 
     其他基本的看比赛网站的数据说明, 一些特殊的需要注释一下:
 
     -   sku_id: 单品 
     -   goods_id: 商品, 一个可以有多个sku (款式)
+    -   点击次数 加购次数和收藏次数==>可以合成一个特征: 商品流行度/用户兴趣
 
 -   [ ] 数据集大小
 
@@ -73,7 +76,7 @@ GPU 上 train, 用 fast.ai 技巧如 https://blog.floydhub.com/ten-techniques-fr
 
 ### SVR
 
-
+其他时序模型
 
 ## Ensemble
 

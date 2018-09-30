@@ -18,7 +18,9 @@ Competition: https://www.datafountain.cn/competitions/313/details/rule.
 -   Time series 分析 (里面链接有点太多了挑些看): https://www.kaggle.com/c/demand-forecasting-kernels-only/discussion/63568
 -   类似的比赛 (搜 online + sales/demand + prediction/forcasting + competition/challenge):
     -   https://www.kaggle.com/c/demand-forecasting-kernels-only
+    -   https://www.kaggle.com/c/competitive-data-science-predict-future-sales
     -   https://semantive.com/long-term-demand-forecasting/ 博客
+-   
 
 ## Additional Info (optional)
 
@@ -43,7 +45,7 @@ Competition: https://www.datafountain.cn/competitions/313/details/rule.
 
     -   sku_id: 单品 
     -   goods_id: 商品, 一个可以有多个sku (款式)
-    -   [ ] 点击次数 加购次数和收藏次数==>可以合成一个特征: 商品流行度/用户兴趣
+    -   [ ] 
 
 -   [ ] 数据集大小
 
@@ -58,8 +60,16 @@ Competition: https://www.datafountain.cn/competitions/313/details/rule.
 
 ## Feature Engineering
 
-- New Features:
-    -   
+- Potential new features:
+    -   [ ] 点击次数 加购次数和收藏次数==>可以合成一个特征: 商品流行度/用户兴趣
+    -   [ ] cart/favorite_click in last week / last some days (discounted 延迟流行度, 消费心理学? 人们买东西的概率与加购物车/收藏时间的关系)
+    -   [ ] 处理季节, 变成日期相关
+    -   [ ] 日期转周几 weekday
+    -   [ ] is_holiday
+    -   [ ] days_til_holiday
+    -   [ ] days_til_promotion
+    -   [ ] days_since_promotion
+    -   [ ] 
 
 ## Model Training
 

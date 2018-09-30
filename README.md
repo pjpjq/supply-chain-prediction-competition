@@ -43,17 +43,17 @@ Competition: https://www.datafountain.cn/competitions/313/details/rule.
 
     -   sku_id: 单品 
     -   goods_id: 商品, 一个可以有多个sku (款式)
-    -   点击次数 加购次数和收藏次数==>可以合成一个特征: 商品流行度/用户兴趣
+    -   [ ] 点击次数 加购次数和收藏次数==>可以合成一个特征: 商品流行度/用户兴趣
 
 -   [ ] 数据集大小
 
 ## Data Preprocessing 洗数据 分数据
 
--   [ ] 补缺失值
--   [ ] 清异常值
+-   [ ] 补缺失值 (好像没什么要补的?)
+-   [ ] 清异常值 (可以利用到相关性, 比如相同品牌/商品可以做一个平均基准)
 -   [ ] 
 
--   [ ] 分割训练测试集
+-   [ ] 分割训练测试集 (怎么分?)
 -   [ ] 调整权重
 
 ## Feature Engineering
@@ -88,5 +88,6 @@ GPU 上 train, 用 fast.ai 技巧如 https://blog.floydhub.com/ten-techniques-fr
 ## Misc
 
 -   [ ] EDA 是什么????????? 好多用了 EDA, eg https://www.kaggle.com/harshpan/store-item-eda-lightgbm
+-   [ ] sklearn 的模型怎么调参? 有什么好方法, fast.ai有讲吗?
 
 

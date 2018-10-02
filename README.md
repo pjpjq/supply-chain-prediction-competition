@@ -16,11 +16,14 @@ Competition: https://www.datafountain.cn/competitions/313/details/rule.
     -    https://github.com/apachecn/kaggle
 -   需求预测: https://en.wikipedia.org/wiki/Demand_forecasting.
 -   Time series 分析 (里面链接有点太多了挑些看): https://www.kaggle.com/c/demand-forecasting-kernels-only/discussion/63568
+-   Time series Python 教学(格式, 处理, etc): https://github.com/AileenNielsen/TimeSeriesAnalysisWithPython
 -   类似的比赛 (搜 online + sales/demand + prediction/forcasting + competition/challenge):
     -   https://www.kaggle.com/c/demand-forecasting-kernels-only
     -   https://www.kaggle.com/c/competitive-data-science-predict-future-sales
     -   https://semantive.com/long-term-demand-forecasting/ 博客
--   
+-   https://github.com/jaungiers/LSTM-Neural-Network-for-Time-Series-Prediction
+-   https://github.com/BenjiKCF/Neural-Network-with-Financial-Time-Series-Data
+-   https://github.com/MaxBenChrist/awesome_time_series_in_python
 
 ## Additional Info (optional)
 
@@ -84,20 +87,26 @@ GPU 上 train, 用 fast.ai 技巧如 https://blog.floydhub.com/ten-techniques-fr
 
 ### RF
 
-### SVR
+其他时序模型: https://www.reddit.com/r/statistics/comments/5ocqkn/what_is_the_state_of_the_art_in_time_series/
 
-其他时序模型
+搜 state of art
+
+### ARIMA
+
+-   [ ] statsmodels.tma 里有 ==> 学一下 statsmodels.tma 
+
+似乎很厉害, 示例: https://machinelearningmastery.com/make-sample-forecasts-arima-python/
 
 ## Ensemble
 
 融合
 
--   [ ] XGBoost (是什么?)
--   [ ] lightGBM (what?)
+-   [ ] XGBoost
+-   [ ] lightGBM 
 
 ## Misc
 
--   [ ] EDA 是什么????????? 好多用了 EDA, eg https://www.kaggle.com/harshpan/store-item-eda-lightgbm
+-   [ ] EDA 是什么, 探索数据, 好多用了 EDA, eg https://www.kaggle.com/harshpan/store-item-eda-lightgbm
 -   [ ] sklearn 的模型怎么调参? 有什么好方法, fast.ai有讲吗?
 
 

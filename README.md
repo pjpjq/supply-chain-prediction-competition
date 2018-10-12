@@ -1,10 +1,10 @@
-# supply-chain-prediction-competition
+# fsupply-chain-prediction-competition
 
 Competition: https://www.datafountain.cn/competitions/313/details/rule.
 
 ## Objective
 
--   运用最近1年多的商品数据预测45天后5周每周 (week1-5) 的销量. 
+-   运用最近1年的商品数据预测45天后5周每周 (week1-5) 的销量.
 
 (具体为: 2017年3月1日至2018年3月16日数据 -> 预测2018年5月1日，5月8日，5月15日，5月22日，5月29日起5周的销量)
 
@@ -13,32 +13,39 @@ Competition: https://www.datafountain.cn/competitions/313/details/rule.
 ## Resources
 
 -   Kaggle 学习资料
+
     -    https://github.com/apachecn/kaggle
+
 -   需求预测: https://en.wikipedia.org/wiki/Demand_forecasting.
+
 -   Time series 分析 (里面链接有点太多了挑些看): https://www.kaggle.com/c/demand-forecasting-kernels-only/discussion/63568
+
 -   Time series Python 教学(格式, 处理, etc): https://github.com/AileenNielsen/TimeSeriesAnalysisWithPython
+
 -   类似的比赛 (搜 online + sales/demand + prediction/forcasting + competition/challenge):
     -   https://www.kaggle.com/c/demand-forecasting-kernels-only
     -   https://www.kaggle.com/c/competitive-data-science-predict-future-sales
     -   https://semantive.com/long-term-demand-forecasting/ 博客
--   https://github.com/jaungiers/LSTM-Neural-Network-for-Time-Series-Prediction
+    -   http://blog.kaggle.com/2015/12/21/rossmann-store-sales-winners-interview-1st-place-gert/
+
+-   LSTM: https://github.com/jaungiers/LSTM-Neural-Network-for-Time-Series-Prediction
+
 -   https://github.com/BenjiKCF/Neural-Network-with-Financial-Time-Series-Data
+
 -   https://github.com/MaxBenChrist/awesome_time_series_in_python
 
-## Additional Info (optional)
+## Structure a project
 
--   可能有用的外部信息
-    -   [ ] 特殊节日: 类似双十一的促销节或者滞销时期, 好像促销很关键, 所以 
-    -   [ ] 查下5月的促销节
-    -   [ ] 气候
-    -   [ ] 宗教, 比如有什么节是不能买东西的
-    -   [ ] 跟中国的政治关系变化 (对外贸易的政策变化)
-    -   [ ] 执御在沙特主要销售什么产品? 什么特点? 跟沙特人民的喜好关系?
-        -   和网红合作 (有什么用?)
--   
+1.  Prepare Problem a) Load libraries b) Load dataset
+
+1.  Summarize Data a) Descriptive statistics b) Data visualizations
+2.  Prepare Data a) Data Cleaning b) Feature Selection c) Data Transforms (Normalize,...)
+3.  Evaluate Algorithms a) Split-out validation dataset b) Test options and evaluation metric c) Spot Check Algorithms d) Compare Algorithms
+4.  Improve Accuracy a) Algorithm Tuning b) Ensembles
+5.  Finalize Model a) Predictions on validation dataset b) Create standalone model on entire training dataset c) Save model for later use
 
 
-## Understanding Datasets
+## Summarize Data (EDA)
 
 -   [ ] 数据集各列的意义
 
@@ -52,14 +59,43 @@ Competition: https://www.datafountain.cn/competitions/313/details/rule.
 
 -   [ ] 数据集大小
 
-## Data Preprocessing 洗数据 分数据
+-   [ ] 可能有用的外部信息
 
--   [ ] 补缺失值 (好像没什么要补的?)
+    -   [ ] 特殊节日: 类似双十一的促销节或者滞销时期, 好像促销很关键, 查下5月的促销节 
+    -   [ ] google trend
+    -   [ ] 
+    -   [ ] 气候
+    -   [ ] 宗教, 比如有什么节是不能买东西的
+    -   [ ] 跟中国的政治关系变化 (对外贸易的政策变化)
+    -   [ ] 执御在沙特主要销售什么产品? 什么特点? 跟沙特人民的喜好关系?
+        -   和网红合作 (有什么用?)
+
+-   
+
+## Data Preprocessing 
+
+-   [ ] 补缺失值 (好像没什么要补的?) 每个sku_id 每天的销量都要补上去吗 (如果0)
+
 -   [ ] 清异常值 (可以利用到相关性, 比如相同品牌/商品可以做一个平均基准)
+
+-   [ ] catogrical 要转吗?
+
 -   [ ] 
 
--   [ ] 分割训练测试集 (怎么分?)
 -   [ ] 调整权重
+
+
+-   Q: What preprocessing and supervised learning methods did you use?
+
+    A: The most important preprocessing was the calculation of averages over different time windows.
+
+    For each day in the sales history, I calculated averages over the last quarter, last half year, last year and last 2 years.
+
+    Those averages were split out by important features like day of week and promotions.
+
+    Second, some time indicators were important: not only month and day of year, but also relative indicators like number of days since the summer holidays started.
+
+    Like most teams, I use xgboost as a learning method.
 
 ## Feature Engineering
 
@@ -76,18 +112,24 @@ Competition: https://www.datafountain.cn/competitions/313/details/rule.
 
 ## Model Training
 
+-   [ ] 分割训练测试集 (怎么分?)
+-   [ ] how to test
+
 找各种模型 + 调参
+
+### XGBoost / LGBM
+
+怎么用
 
 ### NN
 
 GPU 上 train, 用 fast.ai 技巧如 https://blog.floydhub.com/ten-techniques-from-fast-ai/
 
 -   [ ] LSTM
--   [ ] 普通全连接 MLP
 
-### RF
+### 时序模型
 
-其他时序模型: https://www.reddit.com/r/statistics/comments/5ocqkn/what_is_the_state_of_the_art_in_time_series/
+https://www.reddit.com/r/statistics/comments/5ocqkn/what_is_the_state_of_the_art_in_time_series/
 
 搜 state of art
 
@@ -99,14 +141,21 @@ GPU 上 train, 用 fast.ai 技巧如 https://blog.floydhub.com/ten-techniques-fr
 
 ## Ensemble
 
-融合
+stacking / blending
 
--   [ ] XGBoost
--   [ ] lightGBM 
+bagging?
 
 ## Misc
 
--   [ ] EDA 是什么, 探索数据, 好多用了 EDA, eg https://www.kaggle.com/harshpan/store-item-eda-lightgbm
--   [ ] sklearn 的模型怎么调参? 有什么好方法, fast.ai有讲吗?
+-   [ ] EDA 探索数据好多用了 EDA, eg https://www.kaggle.com/harshpan/store-item-eda-lightgbm
+-   [ ] sklearn 的模型怎么调参? 有什么好方法/库? fast.ai有讲吗?
+-   [ ] XGboost / LGBM 怎么调参
+-   [ ] 
+
+## 一些知识
+
+-   XGBoost 可以处理 nan
+-   
+
 
 

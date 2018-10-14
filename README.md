@@ -1,4 +1,4 @@
-# fsupply-chain-prediction-competition
+# supply-chain-prediction-competition
 
 Competition: https://www.datafountain.cn/competitions/313/details/rule.
 
@@ -119,7 +119,9 @@ Competition: https://www.datafountain.cn/competitions/313/details/rule.
 
 ### XGBoost / LGBM
 
-怎么用
+max_depth=7
+
+min_child_weight 负相关 范围很大 很重要的参数
 
 ### NN
 
@@ -155,7 +157,8 @@ bagging?
 ## 一些知识
 
 -   XGBoost 可以处理 nan
--   
+-   Trust your validation and everything will be fine. 尤其时间序列测试集可能会按照时间分割,
+ 出问题的时候可以参考 https://www.coursera.org/learn/competitive-data-science/lecture/8Rp3J/problems-occurring-during-validation
 
 
 
